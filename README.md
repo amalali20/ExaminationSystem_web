@@ -1,7 +1,7 @@
 # JS Exam Project
 
 ## Overview
-This project is a **JavaScript-based online quiz application** that allows users to log in with their name, email, and password before attempting a quiz. The application includes real-time validation, a timer, randomized questions, and a progress tracking system with a circular progress bar.
+This project is a **JavaScript-based online quiz application** that allows users to log in with their name, email, and password before attempting a quiz. The application includes real-time validation, a timer (60 seconds), randomized questions, and a progress tracking system with a circular progress bar.
 
 ## Features
 - **User Authentication**: Users must enter a valid name, email, and password before starting the quiz.
@@ -16,13 +16,6 @@ This project is a **JavaScript-based online quiz application** that allows users
 - **Result Visualization**:
   - Circular progress bar indicating performance.
   - Pass/Fail feedback with an icon.
-
-## Installation & Setup
-### Option 1: Using VS Code Live Server (Recommended)
-1. Open the project folder in **VS Code**.
-2. Install the **Live Server** extension.
-3. Right-click `index.html` → **"Open with Live Server"**.
-
 
 ## Usage
 1. Enter your **name, email, and password**.
