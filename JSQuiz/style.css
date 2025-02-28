@@ -1,0 +1,155 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CA+Guides&display=swap');
+body {
+    /* font-family: 'Playwrite CA Guides'; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #abb1b4;
+}
+
+
+/* Quiz container */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(244, 244, 244);
+    padding: 30px 0px;
+    border-radius: 10px;
+    width: fit-content;
+    height: 70vh;
+    box-shadow: 5px 5px 10px rgba(2, 2, 2, 0.473);
+}
+
+.quiz-container img{
+    border-radius: 50%;
+    width: 30%;
+}
+
+
+/* Input field */
+input {
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+/* Start button */
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(49, 101, 148);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition:  0.3s;
+}
+
+button:disabled {
+    background: #8d96a3ab;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background: rgba(61, 114, 160, 0.986);
+}
+
+#container{
+    background: white;
+    padding: 10px 0;
+    border-radius: 15px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(2, 2, 2, 0.5);
+}
+
+.head{
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.head p{
+    padding-right: 5px;
+    border-right: 2px solid gray;
+}
+
+#container #title{
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #111a31fa;
+}
+#container img{
+    border-radius: 20px;
+    width: 53%;
+    height: 100px;
+}
+
+#answersTable{
+    padding: 5px;
+    width: 75%;
+    border-spacing: 0 10px; 
+}
+#answersTable tr{
+    cursor: pointer;
+}
+#answersTable tr td  {
+    font-size: 18px;
+    color: white;
+    margin: 10px auto;
+    width: 72%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:  #202f5581;
+    transition: .8;
+}
+#answersTable tr td:hover{
+    color: #0f1c3b;
+    background-color: #abb1b4;
+}
+
+.end{
+    width: 62%;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    position: absolute;
+    bottom: 10px;
+}
+.end p{
+    font-size: 12px;
+    font-weight: bold;
+}
+#nextbtn{
+    padding: 8px;
+    width: 35%;
+}
+
+#progress{
+    width: 50%;
+    background: rgb(244, 244, 244);
+    padding: 80px 30px 0 30px;
+    border-radius: 10px;
+    height: 60vh;
+    box-shadow: 5px 5px 10px rgba(2, 2, 2, 0.473);
+}
+
+

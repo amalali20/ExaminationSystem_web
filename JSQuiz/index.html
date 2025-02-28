@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Exam</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+</head>
+<body>
+
+    <div class="quiz-container">
+        <img src="./images/User_logint.webp" alt="">
+        <table class="t1">
+            <tr>
+                <td colspan="2"><p id="warningName"></p></td>
+            </tr>
+            <tr>
+                <td><label for="emailField">Enter Your Email:</label></td>
+                <td><input type="email" id="emailField" placeholder="Your Email"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <p id="warningEmail"></p></td>
+            </tr>
+            <tr>
+                <td><label for="passField">Enter Your password:</label></td>
+                <td><input type="password" id="passField" placeholder="Your password"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><p id="warningPass"></p></td>
+            </tr>
+
+            <tr> <td colspan="3"> <button id="startBtn" disabled>Login</button></td></tr>
+        </table>
+        
+        
+    </div>
+    
+    <div id="container" style="display: none;">
+        <div class="head">
+            <p>Random quiz</p> 
+            <div>
+                <i class="fa-regular fa-clock"></i>
+                <span id="timerDisplay"> </span>
+            </div>
+        </div>
+        <p id="title"></p>
+        <img src="" alt="" id="qImage" >
+        <table id="answersTable"></table>
+
+        <div class="end">
+            <p id="Nq"></p>
+            <button id="nextbtn" disabled>Next</button>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="progress" style="display: none; text-align: center;">
+        <h1 id="thanks">Thanksfor your response</h1>
+        <h2 id="number"></h2>
+        <h3 id="check"> </h3>
+        
+
+
+        <svg width="120" height="120">
+            <!-- Background Circle -->
+            <circle cx="60" cy="60" r="50" stroke="#ddd" stroke-width="10" fill="none"/>
+    
+            <!-- Progress Circle -->
+            <circle id="cprogress" class="progress-ring__circle" cx="60" cy="60" r="50"
+                stroke="green" stroke-width="10" fill="none"
+                stroke-dasharray="314" stroke-dashoffset="314"
+                stroke-linecap="round"
+                transform="rotate(-90 60 60)" />
+    
+            <!-- Percentage Text Inside the Circle -->
+            <text id="progressText" x="60" y="65" text-anchor="middle" font-size="20px" font-weight="bold" fill="black">
+            </text>
+        </svg>
+    </div>
+
+    
+
+    <script src="./js/script.js" type="module"></script>
+
+</body>
+</html>
